@@ -2,7 +2,8 @@
 #include <stack>
 using namespace std;
 
-
+class Solution {
+public:
 string makeGood(string s){
     //take length of string
     int len = s.length();
@@ -18,7 +19,7 @@ string makeGood(string s){
         }
         return s;
     };
-
+};
 
 bool StringGood(char a, char b){
     if (abs(a - b) == 32) return false;
