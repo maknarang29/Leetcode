@@ -9,23 +9,18 @@ class Solution{
     bool isValid(string s){
         stack<char> st;
         bool ans = true;
-        for (char elem : string){
-            if(elem == '(' || elem == '{' || elem == '[' ) st.push(elem);
-            else if (elem == ')' & st.top!= ')') {
+        for (char elem: s){
+            if(elem == '(' || elem== '{' || elem == '[' ) st.push(elem);
+            else if (elem == ')' && st.top() != ')') {
                 ans = false;
-                else continue;
-                };
-            else if (elem == '}'){
-                if (st.top != '}')
+                }
+            else if (elem == '}'&& st.top() != '}'){
                 ans = false;
-                else continue;
             }
-            else if (elem ==']'){
-                if (st.top != ']')
+            else if (elem ==']'&& st.top() != ']'){
                 ans = false;
-                else continue;
             }
         }
     return ans;
     }
-}
+};
