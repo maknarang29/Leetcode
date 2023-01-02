@@ -24,6 +24,10 @@ vector<int> answerQueries(vector<int>& nums, vector<int>& queries) {
         return ans;
     }
 
+vector<int> answerQueries2 (vector<int>& nums, vector<int>& queries){
+    sort(nums.begin,nums.end());
+    
+}
 int main(){
    vector<int> nums;
    nums.push_back(4);
