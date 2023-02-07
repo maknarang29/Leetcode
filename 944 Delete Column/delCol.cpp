@@ -24,6 +24,6 @@ int main(){
     vector<string> S;
     S.push_back("a");
     S.push_back("b"); 
- //   S.push_back("tsr"); 
+//   S.push_back("tsr"); 
     cout<<minDeletionsize(S);
 }
